@@ -136,7 +136,9 @@ Graphical Display of Circular Data (in R)
 windc <- circular(wind, type="angles", units="radians", template="geographics") 
 require("circular") 
 par(mar=c(0,0,0,0)+0.1, oma=c(0,0,0,0)+0.1) plot(windc, cex=1.5, axes=FALSE, bin=360, stack=TRUE, sep=0.035, shrink=1.3) 
-axis.circular(at=circular(seq(0, (7/4)pi, pi/4), template="geographics"), labels=c("N","NE","E","SE","S","SW","W","NW"), cex=1.4) ticks.circular(circular(seq(0, (15/8)pi, pi/8)), zero=pi/2, rotation="clock", tcl=0.075)
+axis.circular(at=circular(seq(0, (7/4)pi, pi/4), template="geographics"), 
+labels=c("N","NE","E","SE","S","SW","W","NW"), cex=1.4) 
+ticks.circular(circular(seq(0, (15/8)pi, pi/8)), zero=pi/2, rotation="clock", tcl=0.075)
 ```
 
 Graphical Display of Circular Data (in R) (ctd)
